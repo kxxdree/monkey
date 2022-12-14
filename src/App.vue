@@ -8,9 +8,10 @@
 import Register from './views/Register.vue'
 import MainLogIn from './views/MainLogIn.vue'
 import SignInVue from './views/SignIn.vue';
+import MainLogOffVue from './views/MainLogOff.vue';
 
 export default {
-  components: { Register, MainLogIn, SignInVue },
+  components: { Register, MainLogIn, SignInVue, MainLogOffVue },
 
 }
 </script>

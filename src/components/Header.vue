@@ -3,7 +3,7 @@
         <router-link to="/" class="main__header_logo">
             <img class="main__header_logo-item" src="../assets/images/logo 1.svg" alt="Лого">
         </router-link>
-        <input class="main__header_input" type="text" placeholder="Найти валюту">
+            <input class="main__header_input" type="text" placeholder="Найти валюту">
     </div>
 </template>
 <script>
@@ -14,7 +14,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 .main__header {
     height: 5rem;
     background-color: #17191F;

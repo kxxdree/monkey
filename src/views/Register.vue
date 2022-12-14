@@ -8,9 +8,6 @@
         </div>
         <div class="auth__container-page">
             <h1 class="auth-page__title">Регистрация</h1>
-            <!-- <p class="auth-page__subtitle">
-                <router-link to="/signin" class="auth-page__subtitle_link">Есть аккаунт?</router-link>
-            </p> -->
             <form action="#" class="auth__form">
                 <input v-model="userName" type="text" class="auth__input" placeholder="Имя пользователя" required>
                 <input v-model="userEmail" type="email" class="auth__input" placeholder="Email" required>
@@ -73,19 +70,6 @@ export default {
     color: white;
     margin-top: 2rem;
 }
-
-// .auth-page__subtitle {
-//     font-size: 2rem;
-//     margin: 1rem 0 3rem;
-//     text-decoration: none;
-//     height: 3rem;
-
-//     &_link {
-//         text-decoration: none;
-//         color: white;
-//         opacity: .5;
-//     }
-// }
 
 .auth-page__subtitle:hover {
     opacity: .5;
