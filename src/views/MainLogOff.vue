@@ -3,12 +3,16 @@
         <header-vue></header-vue>
         <log-in-button-vue></log-in-button-vue>
         <div class="main-login__sale-buttons">
-            <button @click="openPopup" class="main-login__buy-button login-btn">
-                Купить
-            </button>
-            <button @click="openPopup" class="main-login__sale-button login-btn">
-                Продать
-            </button>
+            <router-link to="/signin" class="main-login__sale-buttons_router">
+                <button class="main-login__buy-button login-btn">
+                    Купить
+                </button>
+            </router-link>
+            <router-link to="/signin" class="main-login__sale-buttons_router">
+                <button class="main-login__sell-button login-btn">
+                    Продать
+                </button>
+            </router-link>
         </div>
         <p class="main-login__title">Курс биткоина</p>
         <p></p>
@@ -100,7 +104,7 @@ export default {
 };
 </script>
   
-<style lang="scss">
+<style lang="scss" scoped>
 .main_container {
     display: flex;
     flex-direction: column;
@@ -157,8 +161,15 @@ main {
 
 .main-login__sale-buttons {
     display: flex;
+    flex-direction: column;
     gap: 0.5rem;
     margin-top: 1rem;
+    margin-right: 11rem;
+    align-self: flex-end;
+
+    &_router {
+
+    }
 }
 
 .login-btn {
@@ -183,7 +194,7 @@ main {
     color: #005600;
 }
 
-.main-login__sale-button {
+.main-login__sell-button {
     margin-left: 0;
     color: #8f0000;
 }

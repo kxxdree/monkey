@@ -132,7 +132,7 @@ export default {
   color: white;
   border-radius: 10px;
   font-size: 2rem;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #F18A2D;
   cursor: pointer;
   border: none;
