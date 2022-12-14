@@ -88,19 +88,6 @@ export default {
                 console.log(e.message);
             });
     },
-
-    methods: {
-        openPopup() {
-            this.isInfoPopupVisible
-                ? (this.isInfoPopupVisible = false)
-                : (this.isInfoPopupVisible = true);
-        },
-        openBalance() {
-            this.balanceVisible
-                ? (this.balanceVisible = false)
-                : (this.balanceVisible = true);
-        },
-    },
 };
 </script>
   
